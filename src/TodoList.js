@@ -1,7 +1,8 @@
 import React from "react";
+import Todo from "./Todo"; // Todoコンポーネントのインポート
 
-const TodoList = () => {
-  return <div>TodoList</div>
+const TodoList = ({ todos }) => {
+  return todos.map((todo) => <Todo todo={todo} />);
 };
 
 export default TodoList;

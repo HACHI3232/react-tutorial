@@ -1,3 +1,4 @@
+import { useState } from "react";
 import TodoList from "./TodoList";
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-       <TodoList />
+       <TodoList todos={todos} />
        <input type="text" />
        <button>タスクを追加</button>
        <button>完了したタスクの削除</button>
